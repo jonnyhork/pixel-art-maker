@@ -12,6 +12,7 @@ for (let i = 0; i < 1953; i++){
 
 // COLOR PICKER EVENT HANDLE
 let currentColor
+// let brushColor = document.getElementsById('brushColor')
 
 const colorPalette = document.getElementById('color-select')
 
@@ -19,14 +20,10 @@ colorPalette.addEventListener('click', function(){
     console.log(this);
   const selectedColor = event.target.getAttribute('id')
   currentColor = selectedColor
+
     console.log('The event.target color id:', selectedColor);
     console.log('The currentColor is: ', currentColor);
 })
-
-
-
-
-
 
 
 // CANVAS EVENT HANDLE
@@ -34,7 +31,8 @@ const canvas = document.getElementById('canvas')
 
 canvas.addEventListener('click', function(){
 
-
+  let pixel = event.target
+  pixel.setAttribute('id', currentColor)
 })
 
 

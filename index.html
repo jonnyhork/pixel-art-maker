@@ -5,6 +5,7 @@
     <title>Jonny's Pixel Art Maker</title>
 
     <link rel="stylesheet" href="assets/style.css">
+    <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src='assets/main.js'></script>
@@ -40,9 +41,14 @@
               <div class = 'color' id="aqua"></div>
               <div class = 'color' id="grey"></div>
               <div class = 'color' id="silver"></div>
-            </div>
+              <div class = 'color' id="black"></div>
+              <div class = 'color' id="white"></div>
 
-            <div class="current-color"></div>
+            </div>
+            <div class="color-indicator">
+              <p class = 'selection-text'>Brush Color:</p>
+              <div class = "current-color" id = 'brushColor'></div>
+            </div>
           </div>
 
         </div>
