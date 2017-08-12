@@ -2,23 +2,43 @@ $(document).ready(function(){
 
   console.log('main.js is linked');
 
-  // makePixelGrid(50)
+  // THIS CREATES THE CANVAS PIXELS
 for (let i = 0; i < 1953; i++){
   let canvas = document.getElementById('canvas')
   let pixel = document.createElement('div')
     pixel.className = 'pixel'
     canvas.appendChild(pixel)
-
 }
+
+// COLOR PICKER EVENT HANDLE
+let currentColor
+
+const colorPalette = document.getElementById('color-select')
+
+colorPalette.addEventListener('click', function(){
+    console.log(this);
+  const selectedColor = event.target.getAttribute('id')
+  currentColor = selectedColor
+    console.log('The event.target color id:', selectedColor);
+    console.log('The currentColor is: ', currentColor);
+})
+
+
+
+
+
+
+
+// CANVAS EVENT HANDLE
+const canvas = document.getElementById('canvas')
+
+canvas.addEventListener('click', function(){
+
 
 })
 
 
-// function makePixelGrid(number){
-//  for (var i = 0; i<= number*number; i++){
-//    $('.pixel-grid').append('<div class = "pixel"></div>')
-//  }
-//   $('.pixel').height($('.pixel-grid').height()/number)
-//   $('.pixel').width($('.pixel-grid').width()/number)
-//
-// }
+
+
+
+})
