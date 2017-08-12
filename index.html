@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Jonny's Pixel Art Maker</title>
 
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src='assets/main.js'></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Jonny's Pixel Art Maker</title>
 
-  <body>
-    <header>
-      <h1 class="heading">Pixel Art maker!</h1>
-    </header>
-    <main>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src='assets/main.js'></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|VT323');
+  </style>
+
+</head>
+
+<div class="transparent"></div>
+
+<body>
+  <header>
+    <h1 class="heading">Pixel Art <span class = 'maker'>maker!</span></h1>
+  </header>
+  <main>
 
 
-      <div class="content-container">
-        <div class="workspace">
-            <!-- CANVAS -->
-          <div id="canvas">
-                <!-- // pixel divs go here -->
-          </div>
-          <!-- COLOR PALETTE -->
-          <div id="color-palette">
-            <div id = "color-select">
-              <div class = 'color' id="red"></div>
-              <div class = 'color' id="fuchsia"></div>
-              <div class = 'color' id="maroon"></div>
-              <div class = 'color' id="purple"></div>
-              <div class = 'color' id="orange"></div>
-              <div class = 'color' id="yellow"></div>
-              <div class = 'color' id="green"></div>
-              <div class = 'color' id="lime"></div>
-              <div class = 'color' id="olive"></div>
-              <div class = 'color' id="blue"></div>
-              <div class = 'color' id="navy"></div>
-              <div class = 'color' id="aqua"></div>
-              <div class = 'color' id="grey"></div>
-              <div class = 'color' id="silver"></div>
-              <div class = 'color' id="black"></div>
-              <div class = 'color' id="white"></div>
-
-            </div>
-            <div class="color-indicator">
-              <p class = 'selection-text'>Brush Color:</p>
-              <div class = "current-color" id = 'brushColor'></div>
-            </div>
-          </div>
-
+    <div class="content-container">
+      <div class="workspace">
+        <!-- CANVAS -->
+        <div class="canvas">
+          <!-- // pixel divs go here -->
         </div>
-      </div>
+        <!-- COLOR PALETTE -->
+        <div class="color-palette">
+          <div class="color-select">
+            <div class='color' id="red"></div>
+            <div class='color' id="fuchsia"></div>
+            <div class='color' id="maroon"></div>
+            <div class='color' id="purple"></div>
+            <div class='color' id="orange"></div>
+            <div class='color' id="yellow"></div>
+            <div class='color' id="green"></div>
+            <div class='color' id="lime"></div>
+            <div class='color' id="olive"></div>
+            <div class='color' id="blue"></div>
+            <div class='color' id="navy"></div>
+            <div class='color' id="aqua"></div>
+            <div class='color' id="grey"></div>
+            <div class='color' id="silver"></div>
+            <div class='color' id="black"></div>
+            <div class='color' id="white"></div>
 
-    </main>
-  </body>
+          </div>
+          <div class="color-indicator">
+            <p class='selection-text'>Brush Color:</p>
+            <div class="current-color"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</body>
+
+
 
 </html>
