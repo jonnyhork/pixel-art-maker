@@ -66,6 +66,12 @@ $(document).ready(function() {
       }
     })
 
+    // THIS IS THE VANILLA JS METHOD //
+
+    // let pixels = document.querySelector('.pixel')
+    // console.log('pixels = ', pixels);
+    // console.log('this is: ', this);
+    //
     // canvas.addEventListener('mousedown', function() {
     //   console.log('mouseDOWN');
     //   mouseState = true
@@ -78,16 +84,13 @@ $(document).ready(function() {
     //
     // })
     //
-    // while (mouseState === true) {
-    //   console.log('mouseState if Satement = ', mouseState);
-    //   let pixels = document.querySelector('.pixel')
-    //   console.log('pixels: ', pixels);
-    //   pixels.addEventListener('hover', function() {
-    //
-    //     let pixel = event.target
-    //     console.log('pixel = ', pixel);
+    // canvas.addEventListener('mouseover', function() {
+    //   let pixel = event.target
+    //   if (mouseState) {
+    //     console.log('event target: ', pixel);
     //     pixel.setAttribute('id', currentColor)
-    // }
+    //   }
+    // })
 
   } // paint() closing bracket
 
