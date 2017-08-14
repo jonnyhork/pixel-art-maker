@@ -100,10 +100,12 @@ $(document).ready(function() {
   //
   // customColor.addEventListener('change', function() {
   //   console.log('customColor is: ', customColor.value);
-  //   currentColor = customColor.value
+  //   document.stylesheet.insertRule() = customColor.value
   //   console.log(' currentColor is:', currentColor);
   //
   // })
+
+  // look at window.getcomputedstyle
 
 
 }) // document ready closing bracket
