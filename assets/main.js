@@ -22,13 +22,12 @@ $(document).ready(function() {
   const colorSelect = document.querySelector('.color-select')
 
   colorSelect.addEventListener('click', function() {
-    // console.log(this);
+
     const selectedColor = event.target.getAttribute('id')
     currentColor = selectedColor
     brushColor.setAttribute('id', currentColor)
 
-    // console.log('The event.target color id:', selectedColor);
-    // console.log('The currentColor is: ', currentColor);
+
   })
 
 
@@ -93,10 +92,18 @@ $(document).ready(function() {
     // })
 
   } // paint() closing bracket
-
-
-
   paint()
+
+  // CUSTOM COLOR //
+
+  // let customColor = document.getElementById('custom-color')
+  //
+  // customColor.addEventListener('change', function() {
+  //   console.log('customColor is: ', customColor.value);
+  //   currentColor = customColor.value
+  //   console.log(' currentColor is:', currentColor);
+  //
+  // })
 
 
 }) // document ready closing bracket

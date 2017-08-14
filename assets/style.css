@@ -82,11 +82,12 @@ h3.subtext {
   width: 1em;
   height: 1em;
   border: .01em solid rgba(157, 157, 157, 0.2);
+  /*border-radius: 50%;*/
 }
 
 .color-palette {
   display: flex;
-  flex-direction: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   /*border: 4px solid black;*/
   width: 1000px;
@@ -106,6 +107,14 @@ h3.subtext {
   border: .02em solid grey;
   border-radius: 50%;
   margin: 5px;
+}
+
+#custom-color {
+  border-radius: 22%;
+}
+
+#customSelection {
+  align-self: flex-end;
 }
 
 .color-indicator {
