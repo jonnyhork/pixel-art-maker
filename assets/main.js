@@ -106,6 +106,7 @@ $(document).ready(function() {
   // })
 
   // look at window.getcomputedstyle
+  // then dynamically change the CSS id custom color kind of thing and add that id to the pixels.
 
 
 }) // document ready closing bracket
