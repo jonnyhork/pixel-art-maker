@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     currentColor = customColor.value
     console.log('customColor is: ', customColor.value);
-    // document.stylesheet.insertRule() = customColor.value
+
     console.log(' currentColor is:', currentColor);
 
   })
@@ -51,7 +51,10 @@ $(document).ready(function() {
   canvas.addEventListener('click', function() {
 
     let pixel = event.target
-    pixel.setAttribute('id', currentColor)
+    // pixel.setAttribute('id', currentColor)
+    $(event.target).css({
+      'background-color': currentColor
+    })
   })
 
 
