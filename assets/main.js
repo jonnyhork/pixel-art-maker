@@ -108,5 +108,15 @@ $(document).ready(function() {
   // look at window.getcomputedstyle
   // then dynamically change the CSS id custom color kind of thing and add that id to the pixels.
 
+  // CANVAS STYLE //
+
+  let canvasStyleButton = document.getElementById('canvasStyle')
+
+  canvasStyleButton.addEventListener('click', function() {
+    // let pixel = document.querySelector('.pixel')
+    $('.pixel').toggleClass("dot-pixel")
+
+  })
+
 
 }) // document ready closing bracket
