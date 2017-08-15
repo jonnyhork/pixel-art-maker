@@ -107,5 +107,15 @@ $(document).ready(function() {
 
   // look at window.getcomputedstyle
 
+  // CANVAS STYLE //
+
+  let canvasStyleButton = document.getElementById('canvasStyle')
+
+  canvasStyleButton.addEventListener('click', function() {
+    // let pixel = document.querySelector('.pixel')
+    $('.pixel').toggleClass("dot-pixel")
+
+  })
+
 
 }) // document ready closing bracket
