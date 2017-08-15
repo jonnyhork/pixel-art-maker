@@ -26,7 +26,20 @@ $(document).ready(function() {
     const selectedColor = event.target.getAttribute('id')
     currentColor = selectedColor
     brushColor.setAttribute('id', currentColor)
+    console.log('currentColor from color-select is:', currentColor);
 
+  })
+
+  // CUSTOM COLOR //
+
+  let customColor = document.getElementById('custom-color')
+
+  customColor.addEventListener('change', function() {
+
+    currentColor = customColor.value
+    console.log('customColor is: ', customColor.value);
+    // document.stylesheet.insertRule() = customColor.value
+    console.log(' currentColor is:', currentColor);
 
   })
 
@@ -94,18 +107,9 @@ $(document).ready(function() {
   } // paint() closing bracket
   paint()
 
-  // CUSTOM COLOR //
 
-  // let customColor = document.getElementById('custom-color')
-  //
-  // customColor.addEventListener('change', function() {
-  //   console.log('customColor is: ', customColor.value);
-  //   document.stylesheet.insertRule() = customColor.value
-  //   console.log(' currentColor is:', currentColor);
-  //
-  // })
 
-  // look at window.getcomputedstyle
+
   // then dynamically change the CSS id custom color kind of thing and add that id to the pixels.
 
   // CANVAS STYLE //
@@ -113,7 +117,7 @@ $(document).ready(function() {
   let canvasStyleButton = document.getElementById('canvasStyle')
 
   canvasStyleButton.addEventListener('click', function() {
-    // let pixel = document.querySelector('.pixel')
+
     $('.pixel').toggleClass("dot-pixel")
 
   })
